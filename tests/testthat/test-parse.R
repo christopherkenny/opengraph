@@ -1,3 +1,3 @@
-test_that('multiplication works', {
-  expect_true(is.list(og_parse('https://www.rstudio.com')))
+test_that('og_parse works', {
+  expect_true(is.vector(og_parse('https://www.rstudio.com')))
 })

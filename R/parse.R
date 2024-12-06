@@ -17,7 +17,7 @@ og_parse <- function(url) {
     rvest::html_nodes("meta[property^='og:']")
 
   # Create a named list of the metadata
-  og_metadata <- setNames(
+  og_metadata <- stats::setNames(
     rvest::html_attr(meta_tags, 'content'),
     rvest::html_attr(meta_tags, 'property')
   )
