@@ -16,8 +16,16 @@ knitr::opts_chunk$set(
 # opengraph <img src="man/figures/logo.png" align="right" height="132" alt="" />
 
 <!-- badges: start -->
-  [![R-CMD-check](https://github.com/christopherkenny/opengraph/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/opengraph/actions/workflows/R-CMD-check.yaml)
-  <!-- badges: end -->
+[![CRAN
+status](https://www.r-pkg.org/badges/version/opengraph)](https://CRAN.R-project.org/package=opengraph)
+[![opengraph status
+badge](https://christopherkenny.r-universe.dev/badges/opengraph)](https://christopherkenny.r-universe.dev/opengraph)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![R-CMD-check](https://github.com/christopherkenny/opengraph/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/christopherkenny/opengraph/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/christopherkenny/opengraph/branch/main/graph/badge.svg)](https://app.codecov.io/gh/christopherkenny/opengraph?branch=main)
+<!-- badges: end -->
 
 The goal of `opengraph` is to read and process Open Graph Protocol HTML on websites.
 
