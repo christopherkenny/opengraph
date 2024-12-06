@@ -64,12 +64,26 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<p>This is a relatively simple package. The main function is <code><a href="reference/og_parse.html">og_parse()</a></code> which returns a named vector of Open Graph metadata found on a given webpage.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://christophertkenny.com/opengraph/">opengraph</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span>
-<span><span class="va">url</span> <span class="op">&lt;-</span> <span class="st">"https://www.r-project.org/"</span></span>
+<span><span class="va">url</span> <span class="op">&lt;-</span> <span class="st">'https://christophertkenny.com/opengraph/'</span></span>
 <span><span class="fu"><a href="reference/og_parse.html">og_parse</a></span><span class="op">(</span><span class="va">url</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                                                           title </span></span>
+<span><span class="co">#&gt;                               "Process the Open Graph Protocol" </span></span>
+<span><span class="co">#&gt;                                                     description </span></span>
+<span><span class="co">#&gt; "Parse metadata on websites which use the Open Graph Protocol." </span></span>
+<span><span class="co">#&gt;                                                           image </span></span>
+<span><span class="co">#&gt;               "http://christophertkenny.com/opengraph/logo.png"</span></span></code></pre></div>
+<p>The package can also read specific Open Graph properties with <code><a href="reference/og_property.html">og_property()</a></code>. Properties can be prefixed with <code>og:</code> or not.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/og_property.html">og_property</a></span><span class="op">(</span><span class="va">url</span>, <span class="st">'og:title'</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Process the Open Graph Protocol"</span></span>
+<span><span class="fu"><a href="reference/og_property.html">og_property</a></span><span class="op">(</span><span class="va">url</span>, <span class="st">'title'</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Process the Open Graph Protocol"</span></span></code></pre></div>
+<p>If there is no Open Graph metadata found, <code><a href="reference/og_parse.html">og_parse()</a></code> will return an empty named vector.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/og_parse.html">og_parse</a></span><span class="op">(</span><span class="st">'https://cran.r-project.org/'</span><span class="op">)</span></span>
 <span><span class="co">#&gt; named character(0)</span></span></code></pre></div>
 </div>
 </div>
