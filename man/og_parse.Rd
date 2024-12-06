@@ -10,7 +10,7 @@ og_parse(url)
 \item{url}{A string representing the URL of the webpage to parse.}
 }
 \value{
-A named list of Open Graph metadata.
+A named vector of Open Graph metadata.
 }
 \description{
 Parse Open Graph Metadata

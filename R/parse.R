@@ -2,15 +2,24 @@
 #'
 #' @param url A string representing the URL of the webpage to parse.
 #'
-#' @return A named list of Open Graph metadata.
+#' @return A named vector of Open Graph metadata.
 #' @export
 #'
 #' @examples
 #' og_parse('https://www.rstudio.com')
 og_parse <- function(url) {
   # Fetch and parse the webpage
-  webpage <- url |>
-    rvest::read_html()
+  webpage <- NULL
+  try({
+    webpage <- url |>
+      rvest::read_html()
+  }, silent = TRUE)
+
+  if (is.null(webpage)) {
+    out <- character(0)
+    names(out) <- character(0)
+    return(out)
+  }
 
   # Extract Open Graph meta tags
   meta_tags <- webpage |>

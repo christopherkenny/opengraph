@@ -14,6 +14,13 @@ og_property <- function(url, property) {
     og_parse()
 
   # Extract the specific property
-  property <- gsub('^og:', '', property) # Normalize property name
-  metadata[[property]]
+  vapply(property, function(p) {
+    property <- gsub('^og:', '', p) # Normalize property name
+    if (property %in% names(metadata)) {
+      metadata[[property]]
+    } else {
+      NA_character_
+    }
+  }, FUN.VALUE = character(1)) |>
+    unname()
 }
