@@ -1,13 +1,17 @@
 Package: opengraph
-Title: Process the Open Graph Protocol
-Version: 0.0.0.9000
+Title: Process Metadata from the Open Graph Protocol
+Version: 0.0.1
 Authors@R: 
     person(given = "Christopher T.",
            family = "Kenny",
            role = c("aut", "cre"),
            email = "christopherkenny@fas.harvard.edu",
            comment = c(ORCID = "0000-0002-9386-6860"))
-Description: Parse metadata on websites which use the Open Graph Protocol.
+Description: Social media sites often embed link cards when links are shared, based
+    on metadata in the Open Graph Protocol. This supports extracting that metadata
+    from a website. It further allows for the creation of tags to add to a website
+    to support the Open Graph Protocol and provides a list of the most common tags and
+    their required properties.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
