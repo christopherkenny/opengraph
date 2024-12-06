@@ -109,6 +109,6 @@ og_schema <- function() {
     'profile:username', # - string, A short unique string to identify them.
     'profile:gender', # - enum(male, female), Their gender.
 
-    'website', # - Namespace URI: https://ogp.me/ns/website#
+    'website' # - Namespace URI: https://ogp.me/ns/website#
   )
 }
