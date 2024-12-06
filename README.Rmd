@@ -27,7 +27,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 coverage](https://codecov.io/gh/christopherkenny/opengraph/branch/main/graph/badge.svg)](https://app.codecov.io/gh/christopherkenny/opengraph?branch=main)
 <!-- badges: end -->
 
-The goal of `opengraph` is to read and process Open Graph Protocol HTML on websites.
+The goal of `opengraph` is to read and process Open Graph Protocol metadata on websites.
 
 ## Installation
 
