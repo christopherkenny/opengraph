@@ -2,4 +2,5 @@
 
 export(og_parse)
 export(og_property)
+export(og_schema)
 export(og_validate)
