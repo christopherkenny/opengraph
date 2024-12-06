@@ -36,58 +36,80 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">og_schema</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">og_schema</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
-    <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>A character vector of Open Graph schema.</p>
+    <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
+    <p>A list of Open Graph schema.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">og_schema</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "og:title"                "og:type"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [3] "og:image"                "og:url"                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] "og:audio"                "og:description"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "og:determiner"           "og:locale"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] "og:locale:alternate"     "og:site_name"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [11] "og:video"                "og:image:url"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [13] "og:image:secure_url"     "og:image:type"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [15] "og:image:width"          "og:image:height"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [17] "og:image:alt"            "og:video:url"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [19] "og:video:secure_url"     "og:video:type"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [21] "og:video:width"          "og:video:height"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [23] "og:video:alt"            "og:audio:url"           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [25] "og:audio:secure_url"     "og:audio:type"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [27] "music:duration"          "music:album"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [29] "music:album:disc"        "music:album:track"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [31] "music:musician"          "music.album"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [33] "music:song"              "music:song:disc"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [35] "music:song:track"        "music:musician"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [37] "music:release_date"      "music.playlist"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [39] "music:song"              "music:song:disc"        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [41] "music:song:track"        "music:creator"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [43] "music.radio_station"     "music:creator"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [45] "video.movie"             "video:actor"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [47] "video:actor:role"        "video:director"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [49] "video:writer"            "video:duration"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [51] "video:release_date"      "video:tag"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [53] "video.episode"           "video:actor"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [55] "video:actor:role"        "video:director"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [57] "video:writer"            "video:duration"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [59] "video:release_date"      "video:tag"              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [61] "video:series"            "video.tv_show"          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [63] "video.other"             "article"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [65] "article:published_time"  "article:modified_time"  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [67] "article:expiration_time" "article:author"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [69] "article:section"         "article:tag"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [71] "book"                    "book:author"            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [73] "book:isbn"               "book:release_date"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [75] "book:tag"                "profile"                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [77] "profile:first_name"      "profile:last_name"      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [79] "profile:username"        "profile:gender"         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [81] "website"                </span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">og_schema</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $required</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "og:title" "og:type"  "og:image" "og:url"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $optional</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "og:audio"            "og:description"      "og:determiner"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "og:locale"           "og:locale:alternate" "og:site_name"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "og:video"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $image</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "og:image:url"        "og:image:secure_url" "og:image:type"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "og:image:width"      "og:image:height"     "og:image:alt"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $video</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "og:video:url"        "og:video:secure_url" "og:video:type"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "og:video:width"      "og:video:height"     "og:video:alt"       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $audio</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "og:audio:url"        "og:audio:secure_url" "og:audio:type"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $music.song</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "music:duration"      "music:album"         "music:album:disc"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [4] "music:album:track"   "music:musician"      "music.album"        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] "music:song"          "music:song:disc"     "music:song:track"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [10] "music:musician"      "music:release_date"  "music.playlist"     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [13] "music:song"          "music:song:disc"     "music:song:track"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [16] "music:creator"       "music.radio_station" "music:creator"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $video.movie</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "video:actor"        "video:actor:role"   "video:director"    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "video:writer"       "video:duration"     "video:release_date"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "video:tag"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $video.episode</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "video:actor"        "video:actor:role"   "video:director"    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "video:writer"       "video:duration"     "video:release_date"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "video:tag"          "video:series"      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $video.tv_show</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "video:actor"        "video:actor:role"   "video:director"    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "video:writer"       "video:duration"     "video:release_date"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "video:tag"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $video.other</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "video:actor"        "video:actor:role"   "video:director"    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "video:writer"       "video:duration"     "video:release_date"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "video:tag"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $article</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "article:published_time"  "article:modified_time"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3] "article:expiration_time" "article:author"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "article:section"         "article:tag"            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $book</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "book:author"       "book:isbn"         "book:release_date"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "book:tag"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $profile</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "profile:first_name" "profile:last_name"  "profile:username"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "profile:gender"    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $website</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
