@@ -32,13 +32,27 @@ pak::pak('christopherkenny/opengraph')
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a relatively simple package. 
+The main function is `og_parse()` which returns a named vector of Open Graph metadata found on a given webpage.
 
-```{r example}
+```{r parse}
 library(opengraph)
-## basic example code
-url <- "https://www.r-project.org/"
+url <- 'https://christophertkenny.com/opengraph/'
 og_parse(url)
+```
+
+The package can also read specific Open Graph properties with `og_property()`.
+Properties can be prefixed with `og:` or not.
+
+```{r property}
+og_property(url, 'og:title')
+og_property(url, 'title')
+```
+
+If there is no Open Graph metadata found, `og_parse()` will return an empty named vector.
+
+```{r none}
+og_parse('https://cran.r-project.org/')
 ```
 
 
