@@ -47,38 +47,33 @@ og_schema <- function() {
 
     # music.song
     'music:duration', #' , # - integer >=1' , # - The song\'s length in seconds.
-    'music:album' , # - music.album array' , # - The album this song is from.
-    'music:album:disc' , # - integer >=1' , # - Which disc of the album this song is on.
-    'music:album:track' , # - integer >=1' , # - Which track this song is.
-    'music:musician' , # - profile array' , # - The musician that made this song.
+    'music:album', # - music.album array' , # - The album this song is from.
+    'music:album:disc', # - integer >=1' , # - Which disc of the album this song is on.
+    'music:album:track', # - integer >=1' , # - Which track this song is.
+    'music:musician', # - profile array' , # - The musician that made this song.
     'music.album',
-
-    'music:song' , # - music.song' , # - The song on this album.
-    'music:song:disc' , # - integer >=1' , # - The same as music:album:disc but in reverse.
-    'music:song:track' , # - integer >=1' , # - The same as music:album:track but in reverse.
-    'music:musician' , # - profile' , # - The musician that made this song.
-    'music:release_date' , # - datetime' , # - The date the album was released.
+    'music:song', # - music.song' , # - The song on this album.
+    'music:song:disc', # - integer >=1' , # - The same as music:album:disc but in reverse.
+    'music:song:track', # - integer >=1' , # - The same as music:album:track but in reverse.
+    'music:musician', # - profile' , # - The musician that made this song.
+    'music:release_date', # - datetime' , # - The date the album was released.
     'music.playlist',
-
-    'music:song' , # - Identical to the ones on music.album
+    'music:song', # - Identical to the ones on music.album
     'music:song:disc',
     'music:song:track',
-    'music:creator' , # - profile' , # - The creator of this playlist.
+    'music:creator', # - profile' , # - The creator of this playlist.
     'music.radio_station',
-
-    'music:creator' , # - profile' , # - The creator of this station.
+    'music:creator', # - profile' , # - The creator of this station.
 
     'video.movie',
-
-    'video:actor' , # - profile array' , # - Actors in the movie.
-    'video:actor:role' , # - string' , # - The role they played.
-    'video:director' , # - profile array' , # - Directors of the movie.
-    'video:writer' , # - profile array' , # - Writers of the movie.
-    'video:duration' , # - integer >=1' , # - The movie's length in seconds.
+    'video:actor', # - profile array' , # - Actors in the movie.
+    'video:actor:role', # - string' , # - The role they played.
+    'video:director', # - profile array' , # - Directors of the movie.
+    'video:writer', # - profile array' , # - Writers of the movie.
+    'video:duration', # - integer >=1' , # - The movie's length in seconds.
     'video:release_date', , # - datetime' , # - The date the movie was released.
-    'video:tag' , # - string array' , # - Tag words associated with this movie.
+    'video:tag', # - string array' , # - Tag words associated with this movie.
     'video.episode',
-
     'video:actor', # - Identical to video.movie
     'video:actor:role',
     'video:director',
@@ -104,16 +99,16 @@ og_schema <- function() {
 
     'book:author', # - profile array' , # - Who wrote this book.
     'book:isbn', # - string' , # - The ISBN
-    'book:release_date' , # - datetime' , # - The date the book was released.
+    'book:release_date', # - datetime' , # - The date the book was released.
     'book:tag', # - string array' , # - Tag words associated with this book.
 
     'profile', # - Namespace URI: https://ogp.me/ns/profile#
 
-    'profile:first_name' , # - string, A name normally given to an individual by a parent or self-chosen.
-    'profile:last_name' , # - string, A name inherited from a family or marriage and by which the individual is commonly known.
-    'profile:username' , # - string, A short unique string to identify them.
-    'profile:gender' , # - enum(male, female), Their gender.
+    'profile:first_name', # - string, A name normally given to an individual by a parent or self-chosen.
+    'profile:last_name', # - string, A name inherited from a family or marriage and by which the individual is commonly known.
+    'profile:username', # - string, A short unique string to identify them.
+    'profile:gender', # - enum(male, female), Their gender.
 
-    'website' , # - Namespace URI: https://ogp.me/ns/website#
+    'website', # - Namespace URI: https://ogp.me/ns/website#
   )
 }
