@@ -1,5 +1,5 @@
 Package: opengraph
-Title: Process Metadata from the Open Graph Protocol
+Title: Process Metadata from the 'Open Graph Protocol'
 Version: 0.0.2
 Authors@R:
     person(given = "Christopher T.",
