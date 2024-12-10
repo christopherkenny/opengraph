@@ -1,3 +1,10 @@
+## Resubmission notes
+
+This is a resubmission, which implements the two requested changes to the DESCRIPTION.
+
+- The trailing whitespace was removed from the "Description" field of the DESCRIPTION file to avoid extraneous spaces.
+- The Open Graph Protocol is now listed in single quotes, as 'Open Graph Protocol'.
+
 ## Test environments
 
 * local R installation (macOS), R 4.4.2

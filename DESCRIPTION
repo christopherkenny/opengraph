@@ -1,24 +1,24 @@
 Package: opengraph
 Title: Process Metadata from the Open Graph Protocol
-Version: 0.0.1
-Authors@R: 
+Version: 0.0.2
+Authors@R:
     person(given = "Christopher T.",
            family = "Kenny",
            role = c("aut", "cre"),
            email = "christopherkenny@fas.harvard.edu",
            comment = c(ORCID = "0000-0002-9386-6860"))
-Description: Social media sites often embed cards when links are shared, based on 
-    metadata in the Open Graph Protocol (<https://ogp.me/>). This supports extracting 
-    that metadata from a website. It further allows for the creation of tags to 
-    add to a website to support the Open Graph Protocol and provides a list of the 
+Description: Social media sites often embed cards when links are shared, based on
+    metadata in the 'Open Graph Protocol' (<https://ogp.me/>). This supports extracting
+    that metadata from a website. It further allows for the creation of tags to
+    add to a website to support the 'Open Graph Protocol' and provides a list of the
     standard tags and their required properties.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Imports: 
+Imports:
     rvest
-Suggests: 
+Suggests:
     spelling,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
