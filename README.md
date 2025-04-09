@@ -4,9 +4,8 @@
 # opengraph <img src="man/figures/logo.png" align="right" height="132" alt="" />
 
 <!-- badges: start -->
-<!-- [![CRAN -->
-<!-- status](https://www.r-pkg.org/badges/version/opengraph)](https://CRAN.R-project.org/package=opengraph) -->
-
+[![CRAN
+status](https://www.r-pkg.org/badges/version/opengraph)](https://CRAN.R-project.org/package=opengraph)
 [![opengraph status
 badge](https://christopherkenny.r-universe.dev/badges/opengraph)](https://christopherkenny.r-universe.dev/opengraph)
 [![Lifecycle:
