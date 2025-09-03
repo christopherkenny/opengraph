@@ -1,11 +1,11 @@
 Package: opengraph
 Title: Process Metadata from the 'Open Graph Protocol'
-Version: 0.0.2
+Version: 0.0.3
 Authors@R:
     person(given = "Christopher T.",
            family = "Kenny",
            role = c("aut", "cre"),
-           email = "christopherkenny@fas.harvard.edu",
+           email = "ctkenny@proton.me",
            comment = c(ORCID = "0000-0002-9386-6860"))
 Description: Social media sites often embed cards when links are shared, based on
     metadata in the 'Open Graph Protocol' (<https://ogp.me/>). This supports extracting
@@ -25,3 +25,5 @@ Config/testthat/edition: 3
 URL: https://github.com/christopherkenny/opengraph,
     https://christophertkenny.com/opengraph/
 Language: en-US
+Depends: 
+    R (>= 4.1.0)
