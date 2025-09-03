@@ -20,3 +20,10 @@ Old maintainer(s):
 
 * This includes updating the maintainer email to ctkenny@proton.me. Please see the email from christopherkenny@fas.harvard.edu on 2025-08-29 for confirmation.
 * This also corrects the R dependency (to R >= 4.1.0) to rectify the NOTE on CRAN.
+
+## revdepcheck results
+
+We checked 1 reverse dependencies, comparing R CMD check results across CRAN and dev versions of this package.
+
+ * We saw 0 new problems
+ * We failed to check 0 packages
