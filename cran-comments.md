@@ -1,7 +1,6 @@
 ## Test environments
 
 * local R installation (Windows 11), R 4.5.1
-* local R installation (macOS), R 4.5.1
 * ubuntu-latest (on GitHub Actions), (oldrel-1, devel, and release)
 * windows-latest (on GitHub Actions), (release)
 * macOS-latest (on GitHub Actions), (release)
@@ -9,17 +8,11 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-New maintainer:
-  Christopher T. Kenny <ctkenny@proton.me>
-Old maintainer(s):
-  Christopher T. Kenny <christopherkenny@fas.harvard.edu>
+0 errors | 0 warnings | 0 notes
 
 ## Additional notes
 
-* This includes updating the maintainer email to ctkenny@proton.me. Please see the email from christopherkenny@fas.harvard.edu on 2025-08-29 for confirmation.
-* This also corrects the R dependency (to R >= 4.1.0) to rectify the NOTE on CRAN.
+* This corrects the error in the tests on CRAN.
 
 ## revdepcheck results
 

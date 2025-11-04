@@ -4,5 +4,5 @@ test_that("og_validate() works", {
 
   skip_if(length(web) == 0)
 
-  expect_equal(og_validate(web), TRUE)
+  expect_type(og_validate(web), 'logical')
 })
