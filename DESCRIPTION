@@ -22,6 +22,7 @@ Suggests:
     spelling,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Config/Needs/website: christopherkenny/ctktemplate
 URL: https://github.com/christopherkenny/opengraph,
     https://christophertkenny.com/opengraph/
 Language: en-US
