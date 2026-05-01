@@ -9,6 +9,7 @@ You can install the development version of `opengraph` from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages('pak')
 pak::pak('christopherkenny/opengraph')
 ```
@@ -21,6 +22,7 @@ which returns a named vector of Open Graph metadata found on a given
 webpage.
 
 ``` r
+
 library(opengraph)
 url <- 'https://christophertkenny.com/opengraph/'
 og_parse(url)
@@ -37,6 +39,7 @@ The package can also read specific Open Graph properties with
 Properties can be prefixed with `og:` or not.
 
 ``` r
+
 og_property(url, 'og:title')
 #> [1] "Process the Open Graph Protocol"
 og_property(url, 'title')
@@ -48,6 +51,7 @@ If there is no Open Graph metadata found,
 will return an empty named vector.
 
 ``` r
+
 og_parse('https://cran.r-project.org/')
 #> named character(0)
 ```

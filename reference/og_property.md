@@ -28,5 +28,5 @@ found.
 
 ``` r
 og_property('https://www.rstudio.com', 'og:title')
-#> [1] "Posit | The Open-Source Data Science Company"
+#> [1] "Homepage"
 ```

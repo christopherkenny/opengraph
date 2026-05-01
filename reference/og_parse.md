@@ -22,16 +22,8 @@ A named vector of Open Graph metadata.
 
 ``` r
 og_parse('https://www.rstudio.com')
-#>                                                                                                                                       locale 
-#>                                                                                                                                      "en_US" 
-#>                                                                                                                                         type 
-#>                                                                                                                                    "website" 
-#>                                                                                                                                        title 
-#>                                                                                               "Posit | The Open-Source Data Science Company" 
-#>                                                                                                                                  description 
-#> "The best data science is open source. Posit is committed to creating incredible open-source tools for individuals, teams, and enterprises." 
-#>                                                                                                                                          url 
-#>                                                                                                                          "https://posit.co/" 
-#>                                                                                                                                    site_name 
-#>                                                                                                                                      "Posit" 
+#>                  site_name                        url 
+#>                    "Posit" "https://posit.co/node/11" 
+#>                      title 
+#>                 "Homepage" 
 ```
